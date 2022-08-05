@@ -1,0 +1,176 @@
+:root { 
+    --dark-green: #008780;
+    --light-green: #9bab24;
+    --grown : #553800; 
+}
+.main-title::after {
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: #008780;
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform:translateX(-50%)
+}
+
+.navbar {
+    background-color: #008780 ; 
+
+} 
+.navbar .navbar-nav .nav-link {
+    color: white ;
+    font-size: 18px;
+}
+.logo {
+    color: white;
+}
+
+.navbar .navbar-nav .nav-link.active,
+.navbar .navbar-nav .nav-link:focus,
+.navbar .navbar-nav .nav-link:hover {
+    color: #9bab24;
+}
+.navbar .serch {
+    border-left: 1px solid white;
+    color: white;
+}
+.navbar .serch:hover {
+    color: #9bab24;
+}
+.navbar .serch svg {
+    color: white;
+}
+.navbar .navbar-toggler {
+    color: white;
+    border-color: white;
+    font-size: 25px;
+}
+.navbar .navbar-toggler:focus {
+    box-shadow: none;
+}
+.main-btn {
+    background-color: rgb(255, 255, 255);
+    border-color: #9bab24;
+    color: #008780;
+}
+.main-btn:hover {
+background-color: #9bab24;
+}
+.landing {
+    background-image:url("../images/pexels-pixabay-247819.jpg");
+    background-size: contain;
+    min-height: calc(100vh - 80px);
+}
+.landing .main-btn {
+    padding: .5rem 2rem ;
+}
+.landing .main-btn:hover {
+    background-color: #553800;
+    border-color: #553800;
+    color: white;
+}
+.features .icon-holder {
+    height: 200px;
+}
+.features .img-icon {
+    width: 30px;
+    height: 30px;
+}
+.features .icon-holder svg {
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .icon-holder .number {
+    font-size: 11rem;
+    color: #e4ebb2;
+}
+.features .icon-holder .icon {
+    color: #008780;
+    font-size: 6rem;
+}
+.features .feat h4 {
+    color: #553800;
+}
+.ourwork {
+    background-color: #f5f8f8;
+}
+.ourwork ul :hover {
+    background-color: #008780;
+    color: white;
+}
+
+.ourwork ul li {
+    padding: .5rem 1rem;
+    cursor: pointer;
+}
+
+.ourwork .box {
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+}
+.ourwork .box::before {
+    content: attr(data-work);
+    position: absolute;
+   background-color: #00878091 ;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    transition: .3s;
+    font-size: 1.5rem;
+    transform: translateX(calc(-100% - 10px));
+}
+.ourwork .box:hover::before {
+    transform: translateX(0);
+}
+
+.stuff  .description {
+    max-width: 500px;
+}
+.team {
+    background-color:#f5f8f8;
+}
+.team h2 {
+    color:#008780;
+}
+.team h4 {
+    color: white;
+}
+.team .box h4 {
+    background-color: #008780;
+}
+.project {
+    background-color: #008780;
+}
+.subscribe {
+    background-color:#b3c04e;
+}
+.subscribe input[type="number"] {
+    border: none;
+    border-bottom: 1px solid white;
+}
+.subscribe input[type="number"]:focus {
+    outline: none;
+}
+.subscribe ::placeholder {
+    color: white;
+}
+.subscribe input[type="submit"] {
+   background-color:#008780;
+   color: #ffffff;
+}
+.subscribe .container .fw-bold {
+    color: #008780;
+}
+.footer {
+    background-color: #008780;
+}
+.footer .contact i {
+    width: 20px;
+    height: 20px;
+}
